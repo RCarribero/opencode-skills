@@ -1,12 +1,12 @@
 ---
-name: codegen-worker-workflow
-description: Skill de worker de generacion de codigo. Usar cuando @codegen-worker necesite implementar fragmentos especificos de codigo.
+name: codegen-backend-worker-workflow
+description: Skill de worker de generacion de codigo backend. Usar cuando @codegen-backend-worker necesite implementar APIs o logica de negocio.
 ---
 
-# CodeGen Worker Workflow
+# CodeGen Backend Worker Workflow
 
 ## PROPOSITO
-Implementar fragmentos de codigo especificos asignados por `@codegen-coordinator` con calidad y siguiendo buenas practicas.
+Implementar APIs, modelos y logica de negocio asignados por `@codegen-backend-coordinator` con calidad y siguiendo buenas practicas.
 
 ## RESPONSABILIDADES
 - Escribir codigo limpio y mantenible

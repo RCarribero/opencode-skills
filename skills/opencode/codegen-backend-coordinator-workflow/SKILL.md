@@ -1,20 +1,20 @@
 ---
-name: codegen-coordinator-workflow
-description: Skill de coordinacion de generacion de codigo. Usar cuando @codegen-coordinator necesite estructurar la creacion de nuevas funcionalidades.
+name: codegen-backend-coordinator-workflow
+description: Skill de coordinacion de generacion de codigo backend. Usar cuando @codegen-backend-coordinator necesite estructurar la creacion de nuevas funcionalidades.
 ---
 
-# CodeGen Coordinator Workflow
+# CodeGen Backend Coordinator Workflow
 
 ## PROPOSITO
-Coordinar la generacion de codigo nuevo de manera estructurada, asignando tareas especificas a `@codegen-worker` y asegurando calidad.
+Coordinar la generacion de codigo backend nuevo de manera estructurada, asignando tareas especificas a `@codegen-backend-worker` y asegurando calidad.
 
 ## FLUJO DE TRABAJO
 
 ### 1. ANALISIS DE REQUERIMIENTOS
-- Identificar que se necesita construir
-- Determinar stack tecnologico y convenciones del proyecto
+- Identificar que APIs/modelos/logica se necesita construir
+- Determinar stack tecnologico y convenciones del proyecto backend
 - Evaluar dependencias externas necesarias
-- Definir interfaz publica esperada
+- Definir interfaz publica esperada (endpoints, schemas, etc.)
 
 ### 2. PLANIFICACION
 - Descomponer la funcionalidad en subtareas atomicas
@@ -23,7 +23,7 @@ Coordinar la generacion de codigo nuevo de manera estructurada, asignando tareas
 - Identificar archivos a crear o modificar
 
 ### 3. ASIGNACION A WORKERS
-- Delegar cada subtarea a `@codegen-worker` con contexto claro
+- Delegar cada subtarea a `@codegen-backend-worker` con contexto claro
 - Incluir: archivos objetivo, interfaz esperada, constraints
 - Ejecutar en paralelo cuando no haya dependencias
 
@@ -41,7 +41,7 @@ Coordinar la generacion de codigo nuevo de manera estructurada, asignando tareas
 ```
 📝 TAREA: [descripcion breve]
 📁 ARCHIVOS: [lista de archivos a crear/modificar]
-🔧 STACK: [tecnologias/frameworks]
+🔧 STACK: [tecnologias/frameworks backend]
 📋 REQUERIMIENTOS:
 - [req 1]
 - [req 2]
